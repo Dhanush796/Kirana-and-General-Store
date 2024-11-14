@@ -197,6 +197,11 @@ header a:hover {
         margin-top: 60px; /* Adjust content padding for smaller screen */
     }
 
+    .search-bar input {
+        width: 80%;
+    }
+
+    /* Toggle Sidebar button for mobile */
     .open-btn {
         position: fixed;
         bottom: 20px; /* Fixed position at the bottom for mobile */
@@ -209,7 +214,9 @@ header a:hover {
         z-index: 200;
     }
 
-    .search-bar input {
-        width: 80%;
+    /* Show all content on mobile */
+    .content {
+        margin-left: 0;
+        padding: 1rem;
     }
 }
