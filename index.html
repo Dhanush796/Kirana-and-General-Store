@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirana and Fancy General Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with store name and links to other shops -->
+    <header>
+        <h1>Kirana and General Store</h1>
+        <a href="https://your-other-store-link.com">Visit Our Slippers Store</a> |
+        <a href="https://your-dress-store-link.com">Visit Our Dress Clothes Store</a>
+    </header>
+
+    <!-- Main layout with a sidebar on the left and content area -->
+    <div class="container">
+        <!-- Sidebar Menu on the Left -->
+        <nav class="sidebar">
+            <ul>
+                <li><button onclick="showCategory('vegetables')">Vegetables</button></li>
+                <li><button onclick="showCategory('drinks')">Drinks</button></li>
+                <li><button onclick="showCategory('soaps')">Soaps</button></li>
+                <li><button onclick="showCategory('snacks')">Snacks</button></li>
+                <!-- Add other categories here -->
+            </ul>
+        </nav>
+
+        <!-- Main content area -->
+        <div class="content">
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for items..." oninput="searchItems()">
+            </div>
+
+            <!-- Product sections -->
+            <div id="productSection" class="product-section">
+                <!-- Vegetables Section -->
+                <div id="vegetables" class="category hidden">
+                    <h2>Vegetables</h2>
+                    <div class="product-slider">
+                        <div class="product-card">
+                            <img src="vegetable_images/Tomato2.jpg" alt="Tomato">
+                            <h3>Tomato</h3>
+                            <p>₹20/kg</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="vegetable_images/Potato1.jpg" alt="Potato">
+                            <h3>Potato</h3>
+                            <p>₹25/kg</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="vegetable_images/Onion1.jpg" alt="Onion">
+                            <h3>Onion</h3>
+                            <p>₹30/kg</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="vegetable_images/Green Mirchi1.jpg" alt="Green Mirchi">
+                            <h3>Green Mirchi</h3>
+                            <p>₹40/kg</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="vegetable_images/Ginger1.jpg" alt="Ginger">
+                            <h3>Ginger</h3>
+                            <p>₹50/kg</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="vegetable_images/Lady's Finger1.jpg" alt="Lady's Finger">
+                            <h3>Lady's Finger</h3>
+                            <p>₹35/kg</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="vegetable_images/Bitter Gourd.jpg" alt="Bitter Gourd">
+                            <h3>Bitter Gourd</h3>
+                            <p>₹40/kg</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="vegetable_images/Ivy Gourd.jpg" alt="Ivy Gourd">
+                            <h3>Ivy Gourd</h3>
+                            <p>₹30/kg</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="vegetable_images/Yellow Cucumber.jpg" alt="Yellow Cucumber">
+                            <h3>Yellow Cucumber</h3>
+                            <p>₹25/kg</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="vegetable_images/Beans1.jpg" alt="Beans">
+                            <h3>Beans</h3>
+                            <p>₹50/kg</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="vegetable_images/Ridge Gourd1.jpg" alt="Ridge Gourd">
+                            <h3>Ridge Gourd</h3>
+                            <p>₹30/kg</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="vegetable_images/Taro Root1.jpg" alt="Taro Root">
+                            <h3>Taro Root</h3>
+                            <p>₹40/kg</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks Section -->
+                <div id="drinks" class="category hidden">
+                    <h2>Drinks</h2>
+                    <div class="product-slider">
+                        <div class="product-card">
+                            <img src="Drinks_images/Sprite.jpg" alt="Sprite">
+                            <h3>Sprite</h3>
+                            <p>₹40</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="Drinks_images/Thumsup.jpg" alt="Coke">
+                            <h3>Thumsup</h3>
+                            <p>₹50</p>
+                        </div>
+                        <!-- Add more drinks as needed -->
+                    </div>
+                </div>
+
+                <!-- Soaps Section -->
+                <div id="soaps" class="category hidden">
+                    <h2>Soaps</h2>
+                    <div class="product-slider">
+                        <div class="product-card">
+                            <img src="Soaps_images/Lifebuoy.jpg" alt="Lifebuoy">
+                            <h3>Lifebuoy</h3>
+                            <p>₹30</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="Soaps_images/Dettol.jpg" alt="Dettol">
+                            <h3>Dettol</h3>
+                            <p>₹35</p>
+                        </div>
+                        <!-- Add more soaps as needed -->
+                    </div>
+                </div>
+
+                <!-- Add other categories in the same way -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
